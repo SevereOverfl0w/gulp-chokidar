@@ -55,7 +55,7 @@ Directory that will be watching. Recommended to specify.
 
 #### options.ready
 Type: `Boolean`
-Default: false
+Default: `false`
 
 Run task on start watching
 
