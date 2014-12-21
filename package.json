@@ -1,0 +1,27 @@
+{
+  "name": "gulp-chokidar",
+  "version": "0.0.1",
+  "description": "Awesome Gulp Watcher",
+  "main": "index.js",
+  "keywords": [
+    "gulp",
+    "watch",
+    "watcher",
+    "chokidar",
+    "gulpplugin"
+  ],
+  "author": "TrySound",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TrySound/gulp-chokidar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TrySound/gulp-chokidar/issues"
+  },
+  "dependencies": {
+    "chokidar": "^0.12.5",
+    "globule": "^0.2.0",
+    "gulp-util": "^3.0.1"
+  }
+}
