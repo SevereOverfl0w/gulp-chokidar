@@ -1,7 +1,7 @@
 [gulp](https://github.com/gulpjs/gulp)-chokidar
 =============
 
-Awesome Gulp Watcher and glob wrapper of [chokidar](https://github.com/paulmillr/chokidar).
+Awesome Gulp Watcher and glob wrapper for [chokidar](https://github.com/paulmillr/chokidar).
 
 ## Installation
 
