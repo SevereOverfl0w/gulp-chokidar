@@ -45,7 +45,7 @@ Creates watcher that will spy on files that were matched by `globs` which can be
 This task is called, when some events is happens on file-system.
 If gulp instance passed with require `task` can be function, task string or task array.
 
-#### Options
+#### options
 
 #### options.root
 Type: `String`
