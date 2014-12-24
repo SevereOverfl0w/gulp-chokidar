@@ -66,6 +66,11 @@ function watch(globs, opts, task) {
 					if(stats && stats.isDirectory()) {
 						return false;
 					}
+
+					if(/node_modules|\.git/.test(path)) {
+						return true;
+					}
+
 					return ! globule.isMatch(globs, path);
 				}
 			},
