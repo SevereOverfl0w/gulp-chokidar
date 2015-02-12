@@ -1,6 +1,6 @@
 {
   "name": "gulp-chokidar",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Awesome Gulp Watcher",
   "main": "index.js",
   "keywords": [
@@ -26,8 +26,11 @@
     "url": "https://github.com/TrySound/gulp-chokidar/issues"
   },
   "dependencies": {
-    "chokidar": "^0.12.5",
+    "chokidar": "^1.0.0-rc3",
     "globule": "^0.2.0",
     "gulp-util": "^3.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11"
   }
 }
