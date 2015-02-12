@@ -3,9 +3,11 @@
 
 Awesome Gulp Watcher and glob wrapper for [chokidar](https://github.com/paulmillr/chokidar).
 
-## Installation
+## Install
 
-Run `npm install gulp-chokidar`.
+```
+npm i gulp-chokidar
+```
 
 ## Usage
 
