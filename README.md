@@ -72,3 +72,9 @@ require('gulp-chokidar')('src/css/**/*.css')
 	});
 
 ```
+
+#License
+
+[The MIT License (MIT)](LICENSE)
+
+Copyright &copy; 2014 Bogdan Chadkin
