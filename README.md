@@ -18,7 +18,7 @@ var gulp = require('gulp'),
 gulp.task('hello-css');
 
 gulp.task('default', function () {
-    watch('src/css/**/*.css', { root: 'src/css' }, 'hello-css');
+    watch('src/css/**/*.css', 'hello-css');
 });
 ```
 
@@ -27,7 +27,7 @@ Or you may use watcher without gulp
 ```js
 var watch = require('gulp-chokidar');
 
-watch('src/css/**/*.css', { root: 'src/css' }, function () {
+watch('src/css/**/*.css', function () {
 	console.log('update something);
 });
 
@@ -46,12 +46,6 @@ This task is called, when some events is happens on file-system.
 If gulp instance passed with require `task` can be function, task string or task array.
 
 #### options
-
-#### options.root
-Type: `String`
-Default: `.`
-
-Directory that will be watching. Recommended to specify.
 
 #### options.ready
 Type: `Boolean`
