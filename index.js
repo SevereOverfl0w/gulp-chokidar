@@ -50,10 +50,17 @@ function watch(globs, opts, task) {
 
 	var out = new EE;
 
-	var watcher = chokidar.watch(globs, {
-		persistent: true,
-		ignoreInitial: true
-	})
+    var chokidarOpts = {
+      persistent: true,
+      ignoreInitial: true
+    }
+
+    Object.keys(opts).forEach(function(key){
+      if(key == "ready") return; // Return early to not add this key
+      chokidarOpts[key] = opts[key]
+    })
+
+	var watcher = chokidar.watch(globs, chokidarOpts)
 	.on('change', log.bind(module, 'change'))
 	.on('add', log.bind(module, 'add'))
 	.on('unlink', log.bind(module, 'delete'))
